@@ -180,6 +180,7 @@ public class Rapor_ekrani extends AppCompatActivity  implements SlyCalendarDialo
         }
         else{
             this.firsDate=firstDate;
+            this.firsDate.set(Calendar.HOUR_OF_DAY, 0);
             this.seconDate=secondDate;
             Log.e(TAG, "onDataSelected: "+(firstDate==null)+" "+(secondDate==null) );
             txt_gecerli.setText(getZaman(CokGunFormat,firstDate.getTime())+" - "+getZaman(TekGunFormat,seconDate.getTime()));
