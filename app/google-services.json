@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "906673847069",
+    "firebase_url": "https://asyasporcenter-e728c.firebaseio.com",
+    "project_id": "asyasporcenter-e728c",
+    "storage_bucket": "asyasporcenter-e728c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:906673847069:android:97f7e5244b0be344",
+        "android_client_info": {
+          "package_name": "com.aliosman.asyasporcenter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "906673847069-nh11gtp82pktbkdup2eehfs0497jn69a.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.aliosman.asyasporcenter",
+            "certificate_hash": "4e527f9ee6b12eac2a26f76776dd7ff8c44d0fb4"
+          }
+        },
+        {
+          "client_id": "906673847069-2b32qfq46u6l1unpbu04uf8fin2brsgb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC9dmgXgnAWAPpkh9HdaBumfVLGxpwARoo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "906673847069-2b32qfq46u6l1unpbu04uf8fin2brsgb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

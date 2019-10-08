@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/satis_tabs"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:tabIndicatorColor="@color/colorHeader"
+        app:tabIndicatorHeight="6.0dip"
+        app:tabMaxWidth="0dp"
+        app:tabGravity="fill"
+        app:tabMode="fixed"
+        app:tabSelectedTextColor="@color/colorHeader" >
+
+        <android.support.design.widget.TabItem
+            android:id="@+id/urunler_tab"
+            style="NavigationText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ürünler" />
+
+        <android.support.design.widget.TabItem
+            android:id="@+id/sepet_tab"
+            style="@style/NavigationText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sepet" />
+    </android.support.design.widget.TabLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/satis_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/satis_tabs" />
+</RelativeLayout>

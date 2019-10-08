@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/colorHeader</color>
+    <color name="colorPrimaryDark">#9E761C</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorHeader">#FFC107</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorBlack">#000</color>
+    <color name="background">#DA2B2929</color>
+    <color name="disabled_button">#777373</color>
+    <color name="colorRed">#F44336</color>
+    <color name="selected_background_color">@color/background</color>
+    <color name="unselected_background_color">@color/background</color>
+    <color name="shadow_background_color">#FFFFFF</color>
+    <color name="unselected_header_background_color">#FFFFFF</color>
+    <color name="unselected_text_color">@color/colorHeader</color>
+    <color name="selected_text_color">#FFFF</color>
+    <color name="separator_color">#FFFFFF</color>
+</resources>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.AnaEkran"
+    android:background="#DA2B2929">
+
+    <LinearLayout
+        android:padding="25dp"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btn_satis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Satış"
+            style="@style/btn_background"/>
+        <Button
+            style="@style/btn_background"
+            android:id="@+id/btn_stok"
+            android:layout_marginTop="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Stok"/>
+        <Button
+            android:id="@+id/btn_rapor"
+            android:layout_marginTop="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rapor"
+            style="@style/btn_background"
+            />
+        <Button
+            android:id="@+id/btn_kasa"
+            android:layout_marginTop="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kasa"
+            style="@style/btn_background"
+            />
+    </LinearLayout>
+</RelativeLayout>

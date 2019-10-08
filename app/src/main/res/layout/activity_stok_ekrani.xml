@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.flipboard.bottomsheet.BottomSheetLayout
+    android:id="@+id/bottomSheet"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/layout_stok_Recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/linear"/>
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_above="@id/layout_stok_UrunEkle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_weight="1"
+                android:layout_marginTop="10dp"
+                android:layout_above="@id/kasa_ekran.btn_ekle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Toplam Stok:"
+                android:layout_marginBottom="10dp"/>
+            <TextView
+                android:layout_weight="1"
+                android:layout_marginTop="10dp"
+                android:layout_above="@id/kasa_ekran.btn_ekle"
+                android:id="@+id/txt_toplam"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:gravity="end"
+                android:layout_marginBottom="10dp"/>
+        </LinearLayout>
+        <Button
+            android:textColor="@color/colorWhite"
+            android:layout_gravity="bottom"
+            android:id="@+id/layout_stok_UrunEkle"
+            android:background="@drawable/btn_background"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ürün Ekle"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+
+</com.flipboard.bottomsheet.BottomSheetLayout>

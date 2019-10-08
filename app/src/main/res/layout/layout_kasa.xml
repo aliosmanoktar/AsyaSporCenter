@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="20dp"
+    android:orientation="vertical">
+    <TextView
+        android:textColor="@color/colorBlack"
+        android:textSize="15sp"
+        android:id="@+id/kasa_list.AciklamaText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Açıklama"/>
+    <TextView
+        android:textColor="@color/colorBlack"
+        android:textSize="15sp"
+        android:id="@+id/kasa_list.FiyatText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tutar"
+        android:gravity="right"/>
+</LinearLayout>

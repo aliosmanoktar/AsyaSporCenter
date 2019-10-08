@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:padding="20dp">
+
+        <EditText
+            android:id="@+id/bottom_kasa_ekran.diolog_aciklamaText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Acıklama"/>
+        <EditText
+            android:id="@+id/bottom_kasa_ekran.diolog_fiyatText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Fiyat"
+            android:inputType="numberSigned|numberDecimal"
+            android:layout_marginTop="20dp"/>
+        <Button
+            android:id="@+id/bottom_kasa_ekran.kaydet_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kaydet"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btn_background"
+            android:textColor="@color/colorWhite"/>
+    </LinearLayout>
+
+</RelativeLayout>

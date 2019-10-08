@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.aliosman.asyasporcenter">
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+
+        <provider
+            android:name=".Values.GenericFileProvider"
+            android:authorities="${applicationId}"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <activity android:name=".Activity.Kasa_Ekrani"
+            android:windowSoftInputMode="adjustResize"
+            android:fillViewport="true"/>
+        <activity android:name=".Activity.Login_ekrani"
+            android:windowSoftInputMode="adjustResize"
+            android:fillViewport="true" >
+
+        </activity>
+        <activity android:name=".Activity.stok_Ekrani"
+            android:windowSoftInputMode="adjustResize"
+            android:fillViewport="true"/>
+        <activity android:name=".Activity.satis_ekran"
+            android:windowSoftInputMode="adjustResize"
+            android:fillViewport="true"/>
+        <activity android:name=".Activity.AnaEkran"/>
+        <activity android:name=".Activity.Hakkinda_Ekrani" />
+        <activity android:name=".Activity.Rapor_ekrani">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="703c6a9a70917a005379e45f20260a368088eeaf" />
+    </application>
+
+</manifest>
