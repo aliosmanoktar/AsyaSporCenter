@@ -61,11 +61,14 @@ public class Rapor_ekrani extends AppCompatActivity  implements SlyCalendarDialo
             }
         });
         spinner.setOnItemSelectedListener(new MaterialSpinner.OnItemSelectedListener<String>() {
-
             @Override
             public void onItemSelected(MaterialSpinner view, int position, long id, String item) {
                 dukkan=item;
-                Listele(Search(satis,item,ucret_type));
+                Listele(Search(
+                        (firsDate==seconDate && seconDate==null) ?
+                                satis :
+                                Search(satis,firsDate,seconDate)
+                        ,item,ucret_type));
             }
         });
         MaterialSpinner spinner_ucret=findViewById(R.id.spinner_ucret);
@@ -74,7 +77,11 @@ public class Rapor_ekrani extends AppCompatActivity  implements SlyCalendarDialo
             @Override
             public void onItemSelected(MaterialSpinner view, int position, long id, String item) {
                 ucret_type=item;
-                Listele(Search(satis,dukkan,item));
+                    Listele(Search(
+                            (firsDate==seconDate && seconDate==null) ?
+                                    satis :
+                                    Search(satis,firsDate,seconDate)
+                            ,dukkan,item));
             }
         });
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
